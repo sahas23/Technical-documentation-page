@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="script.js"></script> 
+    <title>Technical documentation page</title>
+    
+</head>
+<body>
+    
+     
+    <main id="main-doc">
+        <nav id="navbar">   
+            <header class="main-title"><h1>Documentation</h1></header>
+            <ul>
+               <li><a href="#Introduction" class="nav-link"><h3>Introduction</h3></a></li>
+               <li><a href="#Syntax" class="nav-link"><h3>Syntax</h3></a></li>
+               <li><a href="#Variables" class="nav-link"><h3>Variables</h3></a></li>
+               <li><a href="#Data_Types" class="nav-link"><h3>Data Types</h3></a></li>
+               <li><a href="#If_Else_Statement" class="nav-link"><h3>If Else Statement</h3></a></li>
+               <li><a href="#While_loops" class="nav-link"><h3>While loops</h3></a></li>
+               <li><a href="#For_loops" class="nav-link"><h3>For loops</h3></a></li>
+               <li><a href="#Functions" class="nav-link"><h3>Functions</h3></a></li>
+               <li><a href="#Collection_Data_Types" class="nav-link"><h3>Collection Data Types</h3></a></li>
+               <li><a href="#Classes_and_Objects" class="nav-link"><h3>Classes and Objects</h3></a></li>
+               <li><a href="#Reference" class="nav-link"><h3>Reference</h3></a></li>
+            </ul>
+
+            <div class="nav-toggle">
+                <a><i class="fa fa-angle-double-down"></i></a>
+            </div>
+            
+        </nav>
+
+        <div id="main-content">
+        <section id="Introduction" class="main-section">
+            <header><h1>Introduction</h1></header>
+               <section>
+               <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+               <li>Python can be used on a server to create web applications.</li>
+               <li>Python can connect to database systems. It can also read and modify files.</li>
+               <li>Python can be used alongside software to create workflows.</li>
+               <li>Python can be used to handle big data and perform complex mathematics.</li>
+               <li>Python can be used on a server to create web applications.</li>
+               <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+               <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+               <code></code>
+               <p></p>
+            </section>
+            
+        </section>
+        <section id="Syntax" class="main-section">
+            <header><h1>Syntax</h1></header>
+            <section >
+                <p>Python syntax can be executed by writing directly in the Command Line:</p>
+                
+                <code>>>> print("Hello, World!")
+                    Hello, World!</code>
+                <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+                <code>C:\Users\Your Name>python myfile.py</code>
+
+                <h1>Python Indentataion</h1>
+                <p>Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.</p>
+                <h3>Example</h3>
+                <code>if 5 > 2:
+                    print("Five is greater than two!")</code>
+        </section>
+
+        </section>
+        <br>
+        <section id="Variables" class="main-section">
+            <header><h1>Variables</h1></header>
+            <section >
+                <p>Variables are containers for storing data values. Unlike other programming languages, Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+               
+                <h3>Example</h3>
+                
+                <code>
+                    x = 5 <br>
+                    y = "John"<br>
+                    print(x)<br>
+                    print(y)</code>
+                <p>Variables do not need to be declared with any particular type and can even change type after they have been set.
+
+                    A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+                 <h3>Example</h3>   
+                 <li>A variable name must start with a letter or the underscore character</li>
+                 <li>A variable name cannot start with a number</li>
+                 <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                 <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+            </section>
+
+        </section>
+        <br>
+
+        <section id="Data_Types" class="main-section">
+            <header><h1>Data Types</h1></header>
+            <section>
+                <p>Python has the following data types built-in by default, in these categories:</p>
+                <li>Text Type: <code>str</code></li>
+                <li>Numeric Types: <code>int, float, complex</code></li>
+                <li>Sequence Types: <code> list, tuple, range</code> </li>
+                <li>Mapping Type: <code> dict</code>  </li>
+                <li>Set Types: <code>set, frozenset</code>  </li>
+                <li>Boolean Type: <code>bool</code> </li>
+                <li>Binary Types: <code> bytes, bytearray, memoryview</code></li>
+               
+                <code></code>
+                <p>In Python, the data type is set when you assign a value to a variable.</p>
+
+                <table>
+                    <thead>
+                         <th>Example</th>
+
+                         <th>Data type</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>x = "Hello World"</td>
+                            <td>str</td>
+                        </tr>
+                        <tr>
+                            <td>x = 20</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>x = 20.5</td>
+                            <td>float</td>
+                        </tr>
+                        <tr>
+                            <td>x = True</td>
+                            <td>bool</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+        </section>
+        
+        <br>
+        <section id="If_Else_Statement" class="main-section">
+            <header><h1>If Else Statement</h1></header>
+            <section>
+                <p>Python supports the usual logical conditions from mathematics. Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.</p>
+
+                <p>An "if statement" is written by using the <code>if</code> keyword. The <code>elif</code>  keyword is pythons way of saying "if the previous conditions were not true, then try this condition". The <code>else</code> keyword catches anything which isn't caught by the preceding conditions.</p>
+                <h3>Example</h3>
+                
+                <code><pre>a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+                    </pre></code>
+                
+                 <p>If you have only one statement to execute, one for if, and one for else, you can put it all on the same line. This technique is known as Ternary Operators, or Conditional Expressions.</p>
+
+            <h3>Example</h3>     
+            <code><pre>a = 2
+b = 330
+print("A") if a > b else print("B")</pre></code>
+
+            </section>
+            
+        </section>
+
+      <br>
+        <section id="While_loops" class="main-section">
+            <header><h1>While loops</h1></header>
+            <section >
+                <p>With the while loop we can execute a set of statements as long as a condition is true. It's important to increment i, or else the loop will continue forever. The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</p>
+                 
+                <h3>Example</h3>
+                <p>Print i as long as i is less than 6:</p>
+                <code><pre>i = 1
+while i < 6:
+print(i)
+i += 1</pre>
+                    </code>
+                
+            </section>
+            </section>
+
+         <br>
+            <section id="For_loops" class="main-section">
+                <header><h1>For loops</h1></header>
+                <section >
+                    <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+                    
+                    <h3>Example</h3>
+                    <p>Print each fruit in a fruit list:</p>
+                    <code><pre>fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+print(x)</pre>
+                        </code>
+                    
+                </section>
+                </section>
+<br>
+
+                <section id="Functions" class="main-section">
+                    <header><h1>Functions</h1></header>
+                    <section >
+                        <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+                        <p>In Python a function is defined using the <code>def</code> keyword.To call a function, use the function name followed by parenthesis.</p>
+                        
+                        <h3>Example</h3>
+                        
+                        <code><pre>def my_function():
+print("Hello from a function")
+                            
+my_function()</pre>
+                            </code>
+
+                    <p>Information can be passed into functions as arguments. Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma. The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+
+                    <h3>Example</h3>
+                    <code><pre>def my_function(fname):
+print(fname + " Refsnes")
+                      
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+                      </pre></code>
+
+
+</section>
+</section>
+
+<br>
+<section id="Collection_Data_Types" class="main-section">
+    <header><h1>Collection Data Types</h1></header>
+    <section >
+        <p>There are four collection data types in the Python programming language:</p>
+        <p> <strong>List </strong> is a collection which is ordered and changeable. Allows duplicate members.</p>
+       
+    <code><pre>thislist = ["apple", "banana", "cherry"]
+print(thislist)</pre>
+            </code>
+            <p> <strong>Tuple</strong> is a collection which is ordered and unchangeable. Allows duplicate members.</p>
+            <code><pre>thistuple = ("apple", "banana", "cherry")
+print(thistuple)</pre>
+                            </code>
+            <p><strong>Set</strong> is a collection which is unordered and unindexed. No duplicate members.</p>
+            <code><pre>thisset = {"apple", "banana", "cherry"}
+print(thisset)</pre></code>
+            <p><strong>Dictionary</strong> is a collection which is unordered, changeable and indexed. No duplicate members.</p>
+            <code><pre>thisdict = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+print(thisdict) </pre></code>
+        
+    </section>
+</section>
+ <br>
+
+    <section id="Classes_and_Objects" class="main-section">
+        <header><h1>Classes and Objects</h1></header>
+        <section >
+            <p>Some additional information here Python is an object oriented programming language. Almost everything in Python is an object, with its properties and methods. A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+
+            <p>Create a class named MyClass, with a property named x:</p>
+             
+             
+             
+            <code><pre>class MyClass:
+x = 5
+               </pre>
+                </code>
+
+              <p>Create an object named p1, and print the value of x:</p>  
+              <code><pre>p1 = MyClass()
+print(p1.x)
+                </pre></code>
+            
+        </section>
+    </section>
+<br>
+
+        <section id="Reference" class="main-section">
+            <header><h1>Reference</h1></header>
+            <section >
+                <p>All the documentation in this page is taken from  <a href="https://www.w3schools.com/">w3schools.</a> </p>
+                 <p>You can read more about Python on the <a href="https://www.python.org/"> Python.org.</a> </p>
+                
+            </section>
+        </section>
+
+
+
+
+    </div>
+
+    </main>
+   
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   
+</body>
+
+<footer>
+    <p>&copy sahaskumar mota</p>
+</footer>
+</html>
